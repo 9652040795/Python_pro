@@ -5,7 +5,7 @@ pipeline {
  stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'GithubPython', url: 'https://github-isl-01.ca.com/manja17/funniest.git/'
+                git credentialsId: 'github-jenkins', url: 'https://github.com/jagadish12/funniest.git'
                 echo 'CheckOut Success'
             }
         }
